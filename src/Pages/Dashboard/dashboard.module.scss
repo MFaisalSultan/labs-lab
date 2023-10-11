@@ -1,0 +1,21 @@
+@import "../../Styles//mixins";
+
+.dashboard {
+  height: 100%;
+  .content {
+    padding: 1.2rem 2rem;
+  }
+  .side {
+    height: 100%;
+    padding: 3.2rem 3rem;
+    border-left: 1px solid var(--info-br);
+    .title {
+      font-size: 1.6rem;
+      font-family: var(--inter-700);
+      color: var(--secondary);
+    }
+    .list{
+        margin-top: 2.4rem;
+    }
+  }
+}

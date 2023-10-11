@@ -1,0 +1,80 @@
+@import "../../Styles/mixins";
+
+/*-------------------///-------------------*/
+/*------        Category Card        ------*/
+
+.category {
+  @include flex($justify: space-between, $align: center);
+  border-radius: 4px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  .categoryItem {
+    padding: 2rem 2.4rem;
+    width: calc(100% / 4);
+    @media screen and (max-width: 1440px) {
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 1.4rem;
+      font-family: var(--inter600);
+      color: var(--info);
+    }
+    h2 {
+      font-size: 2.4rem;
+      font-family: var(--inter700);
+      margin-top: 2.4rem;
+    }
+    p {
+      font-size: 1.2rem;
+      font-family: var(--inter600);
+      line-height: 1.9rem;
+      color: var(--info);
+      margin-top: 0.8rem;
+    }
+  }
+  .line {
+    height: 7.2rem;
+    width: 1px;
+    background-color: var(--info-br);
+    margin: 0 2.4rem;
+    @media screen and (max-width: 1440px) {
+      margin: 0 0.6rem;
+    }
+  }
+}
+
+/*-------------------///-------------------*/
+/*------       Transaction Card      ------*/
+.transaction {
+  @include flex($justify: space-between, $align: center);
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--info-br);
+  .item {
+    @include flex($align: center);
+    column-gap: 1.2rem;
+    .square {
+      @include square($size: 4rem, $radius: 4px);
+      background-color: var(--success-50);
+      color: var(--success);
+      font-size: 2.4rem;
+    }
+    h1 {
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+      font-family: var(--inter600);
+      span {
+        color: var(--primary);
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+      font-family: var(--inter500);
+      margin-top: 0.4rem;
+    }
+  }
+  h2{
+    font-size: 1.4rem;
+    font-family: var(--inter700);
+  }
+}

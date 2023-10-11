@@ -1,0 +1,135 @@
+/*--------------------///----------------------*/
+/*---         Pseudo Elements / Class       ---*/
+/*--------------------///----------------------*/
+/*---                Flex                   ---*/
+@mixin flex(
+  $display: flex,
+  $direction: row,
+  $justify: flex-start,
+  $align: flex-start,
+  $width: 100%
+) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  width: $width;
+}
+
+@mixin hover {
+  &:not([disabled]):hover {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---               Active                  ---*/
+@mixin active {
+  &:not([disabled]):active {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---                Focus                 ---*/
+@mixin focus {
+  &:focus {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---               Visited                 ---*/
+@mixin visited {
+  &:visited {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---                 Link                  ---*/
+@mixin link {
+  &:link {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---                Befor                  ---*/
+@mixin after {
+  &::after {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---                After                  ---*/
+@mixin befor {
+  &::before {
+    @content;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---               Square                 ---*/
+@mixin square($size, $radius: 0) {
+  position: relative;
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // overflow: hidden;
+  @if $radius !=0 {
+    border-radius: $radius;
+  }
+}
+
+/*--------------------///----------------------*/
+/*---           Badge Outlined              ---*/
+@mixin badgeOutLined($color, $borderColor) {
+  height: 1.75rem;
+  width: max-content;
+  padding: 0.4rem 0.7rem;
+  background-color: transparent;
+  border: var(--base-border-thickness) solid var($borderColor);
+  color: var($color);
+}
+
+/*--------------------///----------------------*/
+/*---              C Button                ---*/
+@mixin cBtn($border: 0, $bg: var(--primary), $color: var(--white)) {
+  @include flex($align: center, $justify: center);
+  position: relative;
+  box-sizing: border-box;
+  width: max-content;
+  border: $border;
+  background-color: $bg;
+  color: $color;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s linear 0s;
+  @include hover {
+    background-color: $bg;
+    color: $color;
+    &::before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 0.5s linear 0s;
+    }
+  }
+  @include focus {
+    background-color: $bg;
+  }
+  @include active {
+    background-color: $bg;
+  }
+}

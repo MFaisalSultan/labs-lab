@@ -1,0 +1,78 @@
+@import "../../Styles/mixins";
+
+.loginContainer {
+  .content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+    .title {
+      font-size: 4.8rem;
+      font-family: var(--poppins700);
+      line-height: 7.2rem;
+    }
+    .label {
+      font-size: 2.4rem;
+      font-family: var(--inter700);
+      letter-spacing: 0.2px;
+      margin: 1.6rem 0 1.2rem;
+    }
+    .desc {
+      font-size: 1.4rem;
+      color: var(--info);
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.6rem;
+      .checkRow {
+        @include flex($align: center, $justify: space-between);
+        margin: 0;
+        .forgotPass {
+          font-size: 1.4rem;
+          font-family: var(--inter700);
+          color: var(--primary);
+          width: max-content;
+        }
+        .checkLabel{
+          font-size: 1.2rem;
+          color: var(--info);
+          font-family: var(--inter400);
+          .checkLink{
+            color: var(--dark);
+            font-family: var(--inter600);
+            @include hover{
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+    .labelGrid {
+      @include flex($justify: center, $align: center);
+      position: relative;
+      .line {
+        width: 100%;
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+        line-height: 1.92rem;
+        color: var(--info);
+        background-color: var(--white);
+        padding: 0 1.6rem;
+      }
+    }
+    .link{
+        font-size: 1.4rem;
+        color: var(--secondary);
+        text-align: center;
+        a{
+            color: var(--primary);
+            font-family: var(--inter700);
+        }
+    }
+  }
+}

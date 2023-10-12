@@ -1,8 +1,7 @@
-import Badge from "react-bootstrap/Badge";
+import { HiDotsHorizontal } from "react-icons/hi";
+import AppBadge from "../../Components/Cards/AppBadge";
 import DataTable from "../../Components/DataTable";
 import styles from "./orders.module.scss";
-import AppBadge from "../../Components/Cards/AppBadge";
-import {HiDotsHorizontal} from "react-icons/hi"
 
 const tableData = [
   {

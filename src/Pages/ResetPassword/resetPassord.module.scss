@@ -7,12 +7,14 @@
     row-gap: 3.2rem;
     .title {
       font-size: 4.8rem;
-      font-family: var(--poppins700);
+      font-family: "Poppins";
+      font-weight: 700;
       line-height: 7.2rem;
     }
     .label {
       font-size: 2.4rem;
-      font-family: var(--inter700);
+      font-family: "Inter";
+      font-weight: 700;
       letter-spacing: 0.2px;
       margin: 1.6rem 0 1.2rem;
     }
@@ -21,17 +23,18 @@
       color: var(--info);
     }
     .form {
-        @include flex($direction: column );
+      @include flex($direction: column);
       row-gap: 1.6rem;
     }
-    .link{
-        font-size: 1.4rem;
-        color: var(--secondary);
-        text-align: center;
-        a{
-            color: var(--primary);
-            font-family: var(--inter700);
-        }
+    .link {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      text-align: center;
+      a {
+        color: var(--primary);
+        font-family: "Inter";
+      font-weight: 700;
+      }
     }
   }
 }

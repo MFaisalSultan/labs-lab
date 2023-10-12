@@ -1,17 +1,16 @@
+import classNames from "classnames";
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
+import { BsFacebook } from "react-icons/bs";
 import { CiLock, CiMail, CiUser } from "react-icons/ci";
-import auth from "../../Assets/images/auth.png";
+import { FcGoogle } from "react-icons/fc";
+import AppButton from "../../Components/Buttons/AppButton";
 import AppInput from "../../Components/InputFields/AppInput";
 import Checkbox from "../../Components/InputFields/Checkbox";
 import styles from "../Login/login.module.scss";
-import AppButton from "../../Components/Buttons/AppButton";
-import { FcGoogle } from "react-icons/fc";
-import { BsFacebook } from "react-icons/bs";
 
 export default function SignUp() {
   return (
@@ -22,7 +21,7 @@ export default function SignUp() {
             <div className={styles.content}>
               <div>
                 <h1 className={styles.title}>label lab</h1>
-                <h4 className={styles.label}>Sign Up for an Account</h4>
+                <h2 className={styles.label}>Sign Up for an Account</h2>
               </div>
               <Form noValidate className={styles.form}>
                 <AppInput placeholder="Username">
@@ -75,12 +74,12 @@ export default function SignUp() {
               </Row>
             </div>
           </Col>
-          <Col xs={12} md={6} lg={6} className="d-none d-md-block">
-            <Image
+          <Col xs={12} md={6} lg={6} className={classNames(styles.banner, "d-none d-md-block")}>
+            {/* <Image
               src={auth}
               alt="auth layout banner"
               className="h-100 w-100"
-            />
+            /> */}
           </Col>
         </Row>
       </Container>

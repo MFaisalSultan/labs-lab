@@ -1,41 +1,6 @@
 @import "./mixins";
-
-@font-face {
-  font-family: poppins400;
-  src: url("../Assets/fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: poppins500;
-  src: url("../Assets/fonts/Poppins-Medium.ttf");
-}
-
-@font-face {
-  font-family: poppins600;
-  src: url("../Assets/fonts/Poppins-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: poppins700;
-  src: url("../Assets/fonts/Poppins-Bold.ttf");
-}
-
-@font-face {
-  font-family: inter400;
-  src: url("../Assets/fonts/Inter-Regular.otf");
-}
-@font-face {
-  font-family: inter500;
-  src: url("../Assets/fonts/Inter-Medium.otf");
-}
-@font-face {
-  font-family: inter600;
-  src: url("../Assets/fonts/Inter-SemiBold.otf");
-}
-@font-face {
-  font-family: inter700;
-  src: url("../Assets/fonts/Inter-Bold.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
   /*-------------------///-------------------*/
@@ -55,18 +20,6 @@
   --white: #ffffff;
   --dark: #000000;
   --slate-2: #a09f9f;
-
-
-  /*-------------------///-------------------*/
-  /*------         Font Famil          ------*/
-  --poppins400: poppins400;
-  --poppins500: poppins500;
-  --poppins600: poppins600;
-  --poppins700: poppins700;
-  --inter400: inter400;
-  --inter500: inter500;
-  --inter600: inter600;
-  --inter700: inter700;
 }
 
 * {
@@ -84,7 +37,7 @@ body {
 body {
   color: var(--dark);
   background: var(--white);
-  font-family: var(--inter400);
+  font-family: "Inter", "Poppins";
 }
 
 html {
@@ -118,8 +71,6 @@ p {
   margin: 0;
 }
 
-
-
 /*-------------------///-------------------*/
 /*------            Avatar           ------*/
 .avatar {
@@ -145,12 +96,14 @@ p {
         padding: 0.9rem;
         .title {
           font-size: 3.4rem;
-          font-family: var(--poppins700);
+          font-family: "Poppins";
+          font-weight: 700;
           line-height: 5.1rem;
         }
         .label {
           font-size: 1.6rem;
-          font-family: var(--poppins500);
+          font-family: "Poppins";
+          font-weight: 500;
           color: var(--slate-2);
           margin: 0.6rem 0;
         }
@@ -183,7 +136,8 @@ p {
       padding: 2rem 2.5rem;
       column-gap: 1.2rem;
       .item {
-        font-family: var(--poppins400);
+        font-family: "Poppins";
+        font-weight: 400;
         h1 {
           font-size: 2rem;
         }
@@ -209,12 +163,12 @@ p {
         .title {
           text-wrap: nowrap;
           font-size: 3rem;
-          font-family: var(--poppins600);
+          font-weight: 600;
           line-height: 5.1rem;
         }
         .label {
           font-size: 1.4rem;
-          font-family: var(--poppins400);
+          font-weight: 400;
         }
       }
     }
@@ -222,9 +176,9 @@ p {
       flex-wrap: wrap;
       justify-content: center;
       padding: 1rem;
-      row-gap: .75rem;
+      row-gap: 0.75rem;
       transition: all 1s ease-out;
-      .item{
+      .item {
         text-align: center;
       }
     }
@@ -255,7 +209,7 @@ p {
           font-size: 1.6rem;
           color: var(--secondary);
           padding: 2.2rem 0.8rem;
-          border-bottom: 1px solid #F1F5F9;
+          border-bottom: 1px solid #f1f5f9;
         }
       }
     }
@@ -374,7 +328,8 @@ p {
   }
   .form-check-label {
     font-size: 1.4rem;
-    font-family: var(--inter500);
+    font-family: "Inter";
+    font-weight: 500;
     letter-spacing: 0.2px;
     color: var(--secondary);
     margin-left: 1.2rem;
@@ -389,7 +344,9 @@ p {
   height: 5.6rem;
   width: 100%;
   font-size: 1.6rem;
-  font-family: var(--inter700);
+  line-height: 1.6rem;
+  font-family: "Inter";
+  font-weight: 700;
   border-radius: 1.2rem;
   column-gap: 1.2rem;
 }
@@ -402,7 +359,9 @@ p {
   height: 5.6rem;
   width: 100%;
   font-size: 1.6rem;
-  font-family: var(--inter600);
+  line-height: 1.6rem;
+  font-family: "Inter";
+  font-weight: 600;
   border-radius: 1.2rem;
   column-gap: 1.2rem;
 }
@@ -410,7 +369,8 @@ p {
 .link {
   display: block;
   font-size: 1.4rem;
-  font-family: var(--inter700);
+  font-family: "Inter";
+  font-weight: 700;
   color: var(--primary);
   text-decoration: none;
   width: max-content;

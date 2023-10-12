@@ -17,7 +17,7 @@ export default function ResetPassword() {
             <div className={styles.content}>
               <div>
                 <h1 className={styles.title}>label lab</h1>
-                <h4 className={styles.label}>Reset your password</h4>
+                <h2 className={styles.label}>Reset your password</h2>
                 <p className={styles.desc}>
                   Enter the email address associated with your account and we
                   will send you a link to reset your password.

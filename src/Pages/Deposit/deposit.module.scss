@@ -12,7 +12,8 @@
     border-radius: 4px;
     .formLabel {
       font-size: 1.4rem;
-      font-family: var(--inter500);
+      font-family: "Inter";
+      font-weight: 500;
       color: var(--secondary);
     }
     .form {
@@ -24,10 +25,11 @@
           width: 50%;
           font-size: 1.6rem;
           line-height: 26.6px;
-          font-family: var(--inter700);
-          .btnIcon{
+          font-family: "Inter";
+          font-weight: 700;
+          .btnIcon {
             font-size: 2rem;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
           }
         }
         .stripBtn {
@@ -48,9 +50,9 @@
         }
       }
     }
-    .transactionCard{
-        padding: .7rem 0;
-        border-bottom: 0;
+    .transactionCard {
+      padding: 0.7rem 0;
+      border-bottom: 0;
     }
   }
 }

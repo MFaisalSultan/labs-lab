@@ -10,9 +10,9 @@ import Deposit from "../../Pages/Deposit";
 import OrderLabel from "../../Pages/OrderLabel";
 import Orders from "../../Pages/Orders";
 import AppLayout from "../Layout/Layout";
-import Login from "../../Pages/Login";
-import SignUp from "../../Pages/SignUp";
-import ResetPassword from "../../Pages/ResetPassword";
+// import Login from "../../Pages/Login";
+// import SignUp from "../../Pages/SignUp";
+// import ResetPassword from "../../Pages/ResetPassword";
 
 export const PATHS = {
   DASHBOARD: "/dashboard",
@@ -45,7 +45,7 @@ const AppRouting = () => {
 
   return (
     <Routes>
-      {/* <Route
+      <Route
         path="/"
         element={
           <AppLayout
@@ -60,10 +60,10 @@ const AppRouting = () => {
         <Route path={PATHS.ORDERLABEL} index element={<OrderLabel />} />
         <Route path={PATHS.ORDERS} index element={<Orders />} />
         <Route path={PATHS.DEPOSIT} index element={<Deposit />} />
-      </Route> */}
-      <Route path='/' index element={<Login />} />
+      </Route>
+      {/* <Route path='/' index element={<Login />} />
       <Route path='/signup' index element={<SignUp />} />
-      <Route path='/reset-password' index element={<ResetPassword />} />
+      <Route path='/reset-password' index element={<ResetPassword />} /> */}
     </Routes>
   );
 };

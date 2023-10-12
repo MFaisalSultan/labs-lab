@@ -13,7 +13,7 @@ export default function ResetPassword() {
     <div className={styles.loginContainer}>
       <Container className="min-vh-100 d-flex flex-column justify-content-center">
         <Row className="justify-content-center text-center">
-          <Col xs={12} md={8} lg={6} xl={4}>
+          <Col xs={11} md={8} lg={6} xl={4}>
             <div className={styles.content}>
               <div>
                 <h1 className={styles.title}>label lab</h1>

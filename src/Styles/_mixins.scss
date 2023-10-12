@@ -88,16 +88,6 @@
   }
 }
 
-/*--------------------///----------------------*/
-/*---           Badge Outlined              ---*/
-@mixin badgeOutLined($color, $borderColor) {
-  height: 1.75rem;
-  width: max-content;
-  padding: 0.4rem 0.7rem;
-  background-color: transparent;
-  border: var(--base-border-thickness) solid var($borderColor);
-  color: var($color);
-}
 
 /*--------------------///----------------------*/
 /*---              C Button                ---*/

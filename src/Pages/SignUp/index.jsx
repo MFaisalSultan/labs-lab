@@ -15,10 +15,10 @@ import { BsFacebook } from "react-icons/bs";
 
 export default function SignUp() {
   return (
-    <div className={styles.loginContainer}>
-      <Container className="min-vh-100 d-flex flex-column justify-content-center">
-        <Row className="justify-content-between">
-          <Col xs={4}>
+    <div className={styles.login}>
+      <Container className={styles.container}>
+        <Row className="justify-content-center justify-content-md-between">
+          <Col xs={11} md={6} lg={6} xxl={4}>
             <div className={styles.content}>
               <div>
                 <h1 className={styles.title}>label lab</h1>
@@ -75,7 +75,7 @@ export default function SignUp() {
               </Row>
             </div>
           </Col>
-          <Col xs={6}>
+          <Col xs={12} md={6} lg={6} className="d-none d-md-block">
             <Image
               src={auth}
               alt="auth layout banner"

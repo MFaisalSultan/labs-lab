@@ -1,0 +1,56 @@
+@import "../../Styles/mixins";
+
+.dashboard {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 3.7rem 1.8rem;
+  .formLayout {
+    @include flex($direction: column);
+    row-gap: 1.3rem;
+    padding: 2rem;
+    background-color: #f8fafc;
+    border-radius: 4px;
+    .formLabel {
+      font-size: 1.4rem;
+      font-family: var(--inter500);
+      color: var(--secondary);
+    }
+    .form {
+      width: 100%;
+      .btnGrid {
+        margin-top: 1.4rem;
+        .btn {
+          height: 4.8rem;
+          width: 50%;
+          font-size: 1.6rem;
+          line-height: 26.6px;
+          font-family: var(--inter700);
+          .btnIcon{
+            font-size: 2rem;
+            margin-right: .5rem;
+          }
+        }
+        .stripBtn {
+          border-radius: 4px 0 0 4px;
+          background-color: var(--primary);
+          border-top: 1px solid #1749b8;
+          border-bottom: 1px solid #1749b8;
+          border-left: 1px solid #1749b8;
+          border-right: 0;
+        }
+        .cashAppBtn {
+          border-radius: 0 4px 4px 0;
+          background-color: var(--success);
+          border-top: 1px solid #006c2a;
+          border-right: 1px solid #006c2a;
+          border-bottom: 1px solid #006c2a;
+          border-left: 0;
+        }
+      }
+    }
+    .transactionCard{
+        padding: .7rem 0;
+        border-bottom: 0;
+    }
+  }
+}
